@@ -1,5 +1,6 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  site: "https://sukda-dev.github.io/birthday-project", // URL ของเว็บคุณ
+  base: "/birthday-project/", // ชื่อ repo
+});
