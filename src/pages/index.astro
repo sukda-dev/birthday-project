@@ -1,16 +1,62 @@
 ---
-
+import "../styles/styles.scss";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Birthday-project</title>
+
+    <!-- โหลด jQuery จาก public โดยไม่ให้ Vite bundle -->
+    <script src="/vendor/jquery.min.js" is:inline></script>
+    <script src="/vendor/gsap.min.js" is:inline></script>
+    <script src="/vendor/howler.min.js" is:inline></script>
+
+    <!-- โหลด main.js -->
+    <script type="module" src="/scripts/main.js"></script>
+  </head>
+  <body>
+    <div id="main-container" class="page">
+      <div class="scroll-inner">
+        <div class="content-inner">
+          <div class="group-card">
+            <div class="card card__left">
+              <div class="group-cake">
+                <div class="cake-front">
+                  <div class="group-cake__inner">
+                    <div class="cercle shadow"></div>
+                    <img src="/images/cake-front.png" alt="" />
+                  </div>
+                </div>
+                <div class="cake-back">
+                  <div class="group-cake__inner">
+                    <div class="cercle shadow"></div>
+                    <img src="/images/cake-front.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card card__right">
+              <div class="cercle"></div>
+              <h3 class="heading">Happy Birthday</h3>
+            </div>
+          </div>
+
+          <div class="audio-player">
+            <!-- controls -->
+            <div class="controls">
+              <div class="btn-play"></div>
+
+              <div class="group-trak">
+                <img class="trak" src="/images/trak.png" alt="" />
+                <div class="progress-bar">
+                  <div class="progress-fill"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

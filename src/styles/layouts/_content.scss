@@ -1,0 +1,10 @@
+#content,
+.page,
+.scroll-inner {
+  @include fill-area;
+}
+
+#content {
+  flex: 1;
+  overflow: hidden;
+}
