@@ -8,9 +8,14 @@ import "../styles/styles.scss";
     <title>Birthday-project</title>
 
     <!-- โหลด jQuery จาก public โดยไม่ให้ Vite bundle -->
+    <!-- <script src="/vendor/jquery.min.js" is:inline></script>
+    <script src="/vendor/gsap.min.js" is:inline></script>
+    <script src="/vendor/howler.min.js" is:inline></script> -->
+
     <script src="/vendor/jquery.min.js" is:inline></script>
     <script src="/vendor/gsap.min.js" is:inline></script>
     <script src="/vendor/howler.min.js" is:inline></script>
+    <script type="module" src="/scripts/main.js" is:inline></script>
 
     <!-- โหลด main.js -->
     <script type="module" src="/scripts/main.js"></script>
@@ -25,13 +30,13 @@ import "../styles/styles.scss";
                 <div class="cake-front">
                   <div class="group-cake__inner">
                     <div class="cercle shadow"></div>
-                    <img src="/images/cake-front.png" alt="" />
+                    <img src="/birthday-project/images/cake-front.png" alt="" />
                   </div>
                 </div>
                 <div class="cake-back">
                   <div class="group-cake__inner">
                     <div class="cercle shadow"></div>
-                    <img src="/images/cake-front.png" alt="" />
+                    <img src="/birthday-project/images/cake-front.png" alt="" />
                   </div>
                 </div>
               </div>
