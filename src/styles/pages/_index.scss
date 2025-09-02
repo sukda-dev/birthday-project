@@ -33,7 +33,7 @@
     .card__right {
       z-index: 1;
 
-      @include bg-con("birthday-project/images/bg.png");
+      @include bg-con("/birthday-project/images/bg.png");
       background-size: rem(463) rem(450);
     }
   }
@@ -175,7 +175,7 @@
     .btn-play {
       width: rem(32.5);
       height: rem(30);
-      @include bg-con("birthday-project/images/player.png");
+      @include bg-con("/birthday-project/images/player.png");
 
       cursor: pointer;
 
