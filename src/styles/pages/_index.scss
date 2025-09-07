@@ -102,51 +102,6 @@
     line-height: rem(153);
   }
 
-  // .audio-player {
-  //   width: rem(300);
-  //   background: #ffe6f0;
-  //   padding: 1rem;
-  //   border-radius: 1rem;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   gap: 1rem;
-  //   margin-top: rem(100);
-
-  //   .progress {
-  //     width: 80%;
-  //     appearance: none;
-  //     height: 4px;
-  //     background: #aaa;
-  //     border-radius: 2px;
-
-  //     &::-webkit-slider-thumb {
-  //       appearance: none;
-  //       width: 14px;
-  //       height: 14px;
-  //       border-radius: 50%;
-  //       background: #000;
-  //       cursor: pointer;
-  //     }
-  //   }
-
-  //   .controls {
-  //     display: flex;
-  //     gap: 1rem;
-
-  //     .btn {
-  //       font-size: 1.5rem;
-  //       background: none;
-  //       border: none;
-  //       cursor: pointer;
-
-  //       &:hover {
-  //         transform: scale(1.2);
-  //       }
-  //     }
-  //   }
-  // }
-
   .audio-player {
     width: rem(303);
     height: rem(105);
@@ -175,12 +130,20 @@
     .btn-play {
       width: rem(32.5);
       height: rem(30);
-      @include bg-con("/birthday-project/images/player.png");
-
       cursor: pointer;
 
+      @include bg-con("/birthday-project/images/player.png");
+
+      &.paused {
+        @include bg-con("/birthday-project/images/player.png");
+      }
+
+      &.playing {
+        @include bg-con("/birthday-project/images/pause.png");
+      }
+
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
       }
     }
 

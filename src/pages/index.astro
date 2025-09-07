@@ -8,9 +8,6 @@ import "../styles/styles.scss";
     <title>Birthday-project</title>
 
     <!-- โหลด jQuery จาก public โดยไม่ให้ Vite bundle -->
-    <!-- <script src="/vendor/jquery.min.js" is:inline></script>
-    <script src="/vendor/gsap.min.js" is:inline></script>
-    <script src="/vendor/howler.min.js" is:inline></script> -->
 
     <script src="/birthday-project/vendor/jquery.min.js" is:inline></script>
     <script src="/birthday-project/vendor/gsap.min.js" is:inline></script>
@@ -18,6 +15,10 @@ import "../styles/styles.scss";
     <script type="module" src="/birthday-project/scripts/main.js" is:inline></script>
   </head>
   <body>
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+
     <div id="main-container" class="page">
       <div class="scroll-inner">
         <div class="content-inner">
