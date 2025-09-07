@@ -9,7 +9,7 @@ export function initPage() {
     mainContainer.style.display = "block";
 
     // initAudio
-    const tracks = ["public/audio/sound1.mp3"];
+    const tracks = ["audio/sound1.mp3"];
     let index = 0;
     let sound;
 
