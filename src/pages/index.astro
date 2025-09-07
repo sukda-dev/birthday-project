@@ -6,13 +6,14 @@ import "../styles/styles.scss";
   <head>
     <meta charset="utf-8" />
     <title>Birthday-project</title>
-
+    <link rel="icon" type="image/x-icon" href="/birthday-project/favicon.ico" />
     <!-- โหลด jQuery จาก public โดยไม่ให้ Vite bundle -->
 
     <script src="/birthday-project/vendor/jquery.min.js" is:inline></script>
     <script src="/birthday-project/vendor/gsap.min.js" is:inline></script>
     <script src="/birthday-project/vendor/howler.min.js" is:inline></script>
-    <script type="module" src="/birthday-project/scripts/main.js" is:inline></script>
+    <script type="module" src="/birthday-project/scripts/main.js" is:inline
+    ></script>
   </head>
   <body>
     <div id="preloader">
@@ -51,7 +52,11 @@ import "../styles/styles.scss";
               <div class="btn-play"></div>
 
               <div class="group-trak">
-                <img class="trak" src="/birthday-project/images/trak.png" alt="" />
+                <img
+                  class="trak"
+                  src="/birthday-project/images/trak.png"
+                  alt=""
+                />
                 <div class="progress-bar">
                   <div class="progress-fill"></div>
                 </div>
