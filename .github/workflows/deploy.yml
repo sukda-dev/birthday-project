@@ -2,7 +2,7 @@ name: Deploy Astro site to GitHub Pages
 
 on:
   push:
-    branches: ["master"]  # เปลี่ยนเป็น branch ที่คุณใช้งาน ถ้าไม่ใช่ main
+    branches: ["master"]  # เปลี่ยนเป็น branch ที่คุณใช้งาน
 
 permissions:
   contents: read
