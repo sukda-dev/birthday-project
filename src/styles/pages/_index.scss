@@ -33,7 +33,7 @@
     .card__right {
       z-index: 1;
 
-      @include bg-con("birthday-project/images/bg.png");
+      @include bg-con("/birthday-project/images/bg.png");
       background-size: rem(463) rem(450);
     }
   }
@@ -132,14 +132,14 @@
       height: rem(30);
       cursor: pointer;
 
-      @include bg-con("birthday-project/images/player.png");
+      @include bg-con("/birthday-project/images/player.png");
 
       &.paused {
-        @include bg-con("birthday-project/images/player.png");
+        @include bg-con("/birthday-project/images/player.png");
       }
 
       &.playing {
-        @include bg-con("birthday-project/images/pause.png");
+        @include bg-con("/birthday-project/images/pause.png");
       }
 
       &:hover {
