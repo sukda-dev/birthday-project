@@ -76,7 +76,7 @@ export function initPage() {
 
   // initAudio
 
-  const tracks = ["/audio/sound1.mp3"];
+  const tracks = ["birthday-project/audio/sound1.mp3"];
   let index = 0;
   let sound;
 
